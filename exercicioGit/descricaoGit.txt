@@ -1,0 +1,53 @@
+- git init
+	Utilizado para inicializar o versionamento em uma pasta de versionamento
+
+- git pull
+	Faz sincronização do seus arquivos locais com os disponíveis na nuvem. Puxam os arquivos do repositório.
+
+- git status
+	Verifica quais arquivos e/ou pastas estão na "fila" para adicionar ao repositório de versão
+
+- git add File || git add *
+	Adicina um arquivo para ser "adicionado" no repositório
+
+- git rm --cached File || git rm --cached *
+	Retira o arquivo ou arquivos da lista de sincronização do versionamento
+
+- git clone Link
+	Faz a copia do repositório através do link utilizado
+
+- git commit -m "Texto do versionamento"
+	Faz a atualização local dos arquivos que serão versionados e adicionados ao repositório
+
+- git push
+	Comando para subir os arquivos que estão na lista de sincronização com o repositório
+
+- git log
+	Lista o log de alterações dos repositório
+
+- git branch myBranch
+	Faz um clone do projeto para que seja possivel o trabalho em paralelo em funcionalidades específicas sem comprometer o desenvolvimento por diversas pessoas
+
+- git branch -b myBranch
+	Cria um novo branch
+
+- git branch -d myBranch
+	Deleta o branch em específico
+
+- git checkout myBranch | master
+	Anda pelos branchs disponivels no projeto ou retorna pro master (principal)
+
+- git merge myBranch
+	Após validado o branch, precisa-se fazer o "git checkout master" para que seja anexado as alterações do branch no repositório principal
+
+- git diff source_Branch target_Branch
+	Faz a verificação de quais informações mudaram do master para a branch
+
+- git mv from_File to_File
+	Move um arquivo dentro do repositório de versionamento
+
+- git fetch origin
+- git reset --hard origin/master
+	Faz a busca por atualização no repositorio depois descarta todas as mudanças e commits que estão localmente definidos
+
+- Quando é feito o Fork é necessário criar um Pull Requeste para que as alterações sejam comunicadas ao dono do projeto e assim, se necessário, anexadas ao projeto principal

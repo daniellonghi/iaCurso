@@ -1,0 +1,75 @@
+Exercícios:
+
+ - Crie ao menos três ambientes conda
+ 	 -  conda create -n ambienteFiep1
+ 	 -  conda create -n ambienteFiep2
+ 	 -  conda create -n ambienteFiep3
+
+ - Liste os ambientes criados
+     -  conda env list
+
+ - Instale ao menos dois pacotes em cada ambiente
+      -  conda activate ambienteFiep1
+      -  conda install numpy
+      -  conda install scipy
+      -  conda deactivate
+
+      -  conda activate ambienteFiep2
+      -  conda install nodejs
+      -  conda install tensorflow
+      -  conda deactivate
+
+      -  conda activate ambienteFiep3
+      -  conda install pandas
+      -  conda install mysql
+      -  conda deactivate
+
+ - Liste os pacotes de cada ambiente
+      -  conda activate ambienteFiep1
+      -  conda list | wc -l     =     32 pacotes
+      -  conda deactivate
+
+      -  conda activate ambienteFiep2
+      -  conda list | wc -l     =     54 pacotes
+      -  conda deactivate
+
+      -  conda activate ambienteFiep3
+      -  conda list | wc -l     =     39 pacotes
+      -  conda deactivate
+
+ - Apague um dos ambientes
+       -  conda env remove -n ambienteFiep1
+
+ - O pacote Rstudio está presente no canal conda-forge?
+       -  conda search rstudio
+          R: Sim, RStudio esta disponivel
+
+ - Quais as dependências instaladas após instalar o python?
+       -  conda activate ambienteFiep3
+       -  conda install python=2.7.13
+          -> _libgcc_mutex, blas, ca, certifi, intel, libedit, libffi, libgcc, libgfortran, libstdcxx, mkl, mkl, mkl_fft, mkl_random, ncurses, numpy, numpy, openssl, pandas, pip, python, python, pytz, readline, setuptools, six, sqlite, tk, wheel, xz, zib.
+       - conda deactivate
+
+ - Instale o pacote Pandas pelo pip
+      -  conda activate ambienteFiep3
+      -  conda install pip (foi instalado com o python)
+      -  pip install pandas (instalado la em cima, ja estao presentes no ambiente)
+      -  conda deactivate
+
+ - Monte um ambiente conda novo com python versão 3 Execute o comando python para entrar no interpretador python A partir do interpretador execute o comando print "teste" Após terminar a execução execute ctrl+d para sair do interpretador Qual é o erro apresentado? O que deve ser feito para o print funcionar? Verifique se o mesmo comando apresenta erro no python 2
+      -  conda activate ambienteFiep3
+      -  python
+      -  print "Hello"
+      -  sintaxe do print correta se da pelo comando -> print ("Hello")
+      -  CRTL D nao apresentou nenhuma mensagem de erro. Somente saiu do interpretador.
+      -  python2
+      -  Python2 aceita ambas as sintaxes print "Hello" ou print ("Hello")
+
+ - Exporte um dos ambientes criados e passe por email para todos os alunos
+      - conda-env export -n ambienteFiep3 -f danielFiep3.yml
+
+ - Escolha um dos ambientes enviados e monte no seu computador
+      - conda env create -f asd.yml
+
+Crie um documento mostrando a sequência de comandos executado e as telas retornadas.
+Nao fiz as telas.
