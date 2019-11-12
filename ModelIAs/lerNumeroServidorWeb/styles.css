@@ -1,0 +1,79 @@
+html, body, section{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	display: table;
+	font-family: "Source Sans Pro", Arial;
+}
+
+main{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.wrapper-800{
+	position: relative;
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+}
+
+.itens-form {
+	position: relative;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.texto-lido{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.itens-form h1{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.itens-form h2{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.itens-form input[type="file"]{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 24px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.itens-form input[type="submit"]{
+	position: relative;
+	float: right;
+	width: 100px;
+	text-transform: uppercase;
+	height: 24px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.itens-form input[type="submit"]:hover{
+	background: #ccc;
+	border: 1px solid #ccc;
+}
